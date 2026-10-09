@@ -1,0 +1,20 @@
+# Byte-compiled / Python execution files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# VS Code directory & settings
+.vscode/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment and secret files
+.env
+*.env
