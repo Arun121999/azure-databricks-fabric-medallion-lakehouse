@@ -1,9 +1,10 @@
-#Azure Databricks & Microsoft Fabric Medallion Lakehouse
+# Azure Databricks & Microsoft Fabric Medallion Lakehouse
 
-End-to-end data pipeline built on Azure Databricks, Delta Lake, and Microsoft Fabric to process e-commerce transaction data (Medallion Architecture).
+End-to-end data pipeline built on Azure Databricks, Delta Lake, and Microsoft Fabric to process e-commerce transaction data using Medallion Architecture.
 
+---
 
-#Architecture Flow
+## Architecture Flow
 
 Raw JSON/CSV Data ➔ Azure Databricks (Bronze Ingestion) ➔ Silver Cleansing & Quality Checks ➔ Gold Business Aggregations ➔ Microsoft Fabric Lakehouse ➔ Power BI (Direct Lake)
 
@@ -12,8 +13,12 @@ Raw JSON/CSV Data ➔ Azure Databricks (Bronze Ingestion) ➔ Silver Cleansing &
 3. **Gold Layer**: Aggregated business metrics (customer LTV, product sales trends, order rollups) structured for reporting.
 4. **Reporting**: Microsoft Fabric integration via Direct Lake for real-time reporting without manual dataset refreshes.
 
-#Directory Layout
+---
 
+## Directory Layout
+
+```text
+.
 ├── notebooks/
 │   ├── 01_bronze_ingestion.py        # Raw data load & schema validation
 │   ├── 02_silver_transformation.py  # Cleansing, deduplication & quality checks
